@@ -13,7 +13,7 @@ import black
 
 
 MD_RE = re.compile(
-    r'(?P<before>^(?P<indent> *)```\s*python\b[^\n]*\n)'
+    r'(?P<before>^(?P<indent> *)```\s*(py|python)\b[^\n]*\n)'
     r'(?P<code>.*?)'
     r'(?P<after>^(?P=indent)```\s*$)',
     re.DOTALL | re.MULTILINE,
